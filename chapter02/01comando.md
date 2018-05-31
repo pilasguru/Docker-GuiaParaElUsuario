@@ -6,7 +6,7 @@ Una de las primeras acciones que podemos hacer con docker es ejecutar comandos:
 $ docker run busybox echo 'hola mundo!'
 ```
 
-La primera vez que lo ejecutamos, descargará la //imagen// `busybox` e inmediatamente ejecutará el comando `echo 'hola mundo!'` produciendo la salida correspondiente:
+La primera vez que lo ejecutamos, descargará la _imagen_ `busybox` e inmediatamente ejecutará el comando `echo 'hola mundo!'` produciendo la salida correspondiente:
 
 ```
 Unable to find image 'busybox:latest' locally

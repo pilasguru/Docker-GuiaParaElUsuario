@@ -8,11 +8,10 @@ $ docker run -it debian bash
 
 donde:
 
-''-i'' crea una sesión interactiva
+- ''-i'' crea una sesión interactiva
+- ''-t'' ofrece una terminal (tty)
 
-''-t'' ofrece una terminal (tty)
-
-y la //imagen// que utilizará es un `debian` mínimo y ejecutará el comando `bash`, dando como resultado un shell:
+y la _imagen_ que utilizará es un `debian` mínimo y ejecutará el comando `bash`, dando como resultado un shell:
 
 ```
 root@ce1a1c7bf990:/#
@@ -28,6 +27,6 @@ exit
 
 ---
 
-{{Seguir}} [[Docker autoejecutable]]
+[Docker autoejecutable](03autoejecutable.md)
 
 

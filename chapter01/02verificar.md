@@ -2,7 +2,7 @@
 
 _No es un objetivo de esta guía abordar la instalación de docker_. Si bien es un proceso sencillo, los requisitos y opciones de configuración varían según dónde se va a utilizar docker.
 
-Docker es nativo de sistemas operativos Linux y los procesos de instalación difieren de acuerdo a la [[distribución y versión de Linux|https://docs.docker.com/engine/installation/linux/ubuntulinux/]] que se use.  Pero en la actualidad, docker se puede instalar en otros sistemas operativos como [[macOS|https://docs.docker.com/engine/installation/mac/]] y [[Windows|https://docs.docker.com/engine/installation/windows/]].
+Docker es nativo de sistemas operativos Linux y los procesos de instalación difieren de acuerdo a la [distribución y versión de Linux](https://docs.docker.com/engine/installation/linux/ubuntulinux/) que se use.  Pero en la actualidad, docker se puede instalar en otros sistemas operativos como [macOS](https://docs.docker.com/engine/installation/mac/) y [Windows](https://docs.docker.com/engine/installation/windows/).
 
 ## Verificación de la instalación
 
