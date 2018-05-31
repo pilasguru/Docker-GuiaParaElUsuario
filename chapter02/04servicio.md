@@ -14,8 +14,8 @@ $ docker run -d -p 8082:8082 andygrunwald/simple-webserver
 
 donde:
 
-- ''-d'' pondrá a correr el docker en //background//
-- ''-p 8082:8082'' abrirá el puerto 8082 en el equipo local conectará con el puerto 8082 del contenedor.
+- `-d` pondrá a correr el docker en //background//
+- `-p 8082:8082` abrirá el puerto 8082 en el equipo local conectará con el puerto 8082 del contenedor.
 
 y descargará la imagen y nos devolverá el _prompt_, pero ha dejado corriendo el docker.
 
@@ -48,7 +48,7 @@ $ docker stop 01a420094251
 
 ---
 
-Referencias:  
+## Referencias:  
 
 - [https://hub.docker.com/r/andygrunwald/simple-webserver/](https://hub.docker.com/r/andygrunwald/simple-webserver/)
  

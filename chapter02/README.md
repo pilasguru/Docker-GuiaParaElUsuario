@@ -4,3 +4,5 @@ Estos ejemplos de primeros pasos pretenden mostrar rápidamente acciones básica
 
 1. [Docker como comando](01comando.md)
 2. [Docker como shell](02shell.md)
+3. [Docker autoejecutable](03autoejecutable.md)
+4. [Docker como servicio](04servicio.md)

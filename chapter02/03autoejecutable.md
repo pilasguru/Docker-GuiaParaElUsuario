@@ -38,12 +38,8 @@ Esta imagen ha sido creada con el único fin de correr ese proceso _docketizado_
 
 ---
 
-Referencias: 
+## Referencias: 
 
 - [https://hub.docker.com/_/hello-world/](https://hub.docker.com/_/hello-world/)
-
----
-
-[Docker como servicio](04servicio.md)
 
 

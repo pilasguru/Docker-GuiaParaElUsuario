@@ -27,7 +27,3 @@ PID   USER     TIME   COMMAND
 ```
 
 Para saber por qué tenemos un único proceso con `PID 1`, ver [Cómo funciona docker](../chapter01/01funciona.md)
-
----
-
-[Docker como shell](02shell.md)
