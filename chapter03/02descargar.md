@@ -1,0 +1,7 @@
+# Descargar imágenes
+
+pull
+
+run
+
+

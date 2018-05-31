@@ -7,7 +7,7 @@ Cuando el banco de imágenes es remoto se denomina _repositorio_ y tiene como ob
 El banco de imágenes _local_ permite guardar las imágenes que se descargan de los repositorios y también las que son creadas localmente en el host donde se ejecuta docker.
 
 
-
+---
 
 ## Referencias:
 
