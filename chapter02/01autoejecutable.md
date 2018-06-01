@@ -8,7 +8,8 @@ $ docker container run hello-world
 
 Al ejecutar buscará localmente una imagen llamada `hello-world`, no la encontrará procederá a descargarla y guardarla en el `registry` local:
 
-``` Unable to find image 'hello-world:latest' locally
+```
+Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 9bb5a5d4561a: Pull complete
 Digest: sha256:f5233545e43561214ca4891fd1157e1c3c563316ed8e237750d59bde73361e77

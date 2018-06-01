@@ -24,7 +24,22 @@ Management Commands:
 
 El comando `container` es la opción por defecto del comando docker, por lo que generalmente no se escribe, utilizando directamente los sub-comandos.
 
-1. [Docker autoejecutable](01autoejecutable.md)
-2. [Docker como comando](02comando.md)
-3. [Docker como shell](03shell.md)
-4. [Docker como servicio](04servicio.md)
+---
+
+## Ejercicios
+
+### 1. 
+
+Revise con el comando `ps` los procesos _docker_ que están corriendo en su equipo.
+
+### 2. 
+
+Revise los paquetes que están instalados vinculados a docker en su sistema
+
+### 3. 
+
+Liste el _status_ y reinicie el daemon correspondiente a los servicios de Docker Engine.
+
+### 4. 
+
+Localice con el comando `whereis` dónde se encuentra el ejecutable docker 
