@@ -5,7 +5,9 @@
 El repositorio de imágenes público Docker Hub se puede buscar mediante web o con el comando:
 
 ```
-docker search ubuntu | grep ^ubuntu
+docker search debian | head
+
+docker search debian | grep ^debian
 ```
 
 ## Descargar
@@ -19,8 +21,6 @@ run
 tag
 
 -filter
-
-rmi
 
 ## Borrar
 
