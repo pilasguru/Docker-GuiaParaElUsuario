@@ -13,7 +13,7 @@ docker container run -ti ubuntu bash
 
 ``` apt-get update
 apt-get install -y figlet
-figlet "hello docker"
+figlet 'hello docker'
 exit
 ```
 
