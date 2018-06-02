@@ -30,14 +30,14 @@ docker container commit <CONTAINER-ID>
 docker image ls
 ```
 
-Le colocamos el nombre a la imagen generada con el comando `image tag` 
+Le colocamos el nombre a la imagen generada con el comando `image tag` pues no lo hicimos junto con el `container commit`
 
 ```
 docker image tag <IMAGE-ID> confidget
 docker image ls
 ```
 
-Ahora que disponemos de una imagen basada en debian que tiene el comando `figlet` instalado la podemos utilizar:
+Ahora que disponemos de una imagen basada en _debian_ que tiene el comando `figlet` instalado la podemos utilizar:
 
 ```
 docker container run configlet figlet hola
