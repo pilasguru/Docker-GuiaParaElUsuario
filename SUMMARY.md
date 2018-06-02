@@ -17,11 +17,9 @@
 ### Capítulo III
 
 * [Imágenes docker](chapter03/README.md)
-* [Buscar imágenes](chapter03/01buscar.md)
-* [Descargar imágenes](chapter03/02descargar.md)
-* [Crear imágenes propias](chapter03/03crear.md)
-* [Gestionar imágenes locales](chapter03/04gestionar.md)
-* [Subir (compartir) imágenes propias](chapter03/05subir.md)
+* [Gestión de imágenes](chapter03/01imagenes.md)
+* [Crear imágenes propias](chapter03/02crear.md)
+* [Subir (compartir) imágenes propias](chapter03/03subir.md)
 
 ---
 

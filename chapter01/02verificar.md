@@ -41,7 +41,7 @@ Cómo puede ver, en su equipo está corriendo un `daemon` llamado Docker Engine 
 Y seguidamente con el comando
 
 ```
-$ docker info
+$ docker system info
 ```
 
 saber cómo está docker funcionando en nuestro sistema (los datos  mostrados pueden variar):

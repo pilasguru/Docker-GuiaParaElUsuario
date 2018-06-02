@@ -1,3 +1,0 @@
-# Buscar imágenes
-
-search

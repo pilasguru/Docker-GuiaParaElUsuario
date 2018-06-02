@@ -1,7 +1,0 @@
-# Descargar imágenes
-
-pull
-
-run
-
-
