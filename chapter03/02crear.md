@@ -7,15 +7,22 @@ Existen dos métodos para crear imágenes propias:
 
 ## Crear a partir de un contenedor
 
+Correr una contenedor basado en la imagen `debian` e ingresar al shell para hacer cambios:
+
 ```
-docker container run -ti ubuntu bash
+docker container run -ti debian bash
 ```
 
-``` apt-get update
-apt-get install -y figlet
+Ejecutar estos comandos para instalar `figlet` y salir
+
+```
+apt-get update
+apt-get install -y fidlet
 figlet 'hello docker'
 exit
 ```
+
+El container está detenido y a partir de él se puede crear una imagen, que se guarda en el repositorio local, con el comando `container commit`
 
 ```
 docker container ls -a
@@ -23,10 +30,14 @@ docker container commit <CONTAINER-ID>
 docker image ls
 ```
 
+Le colocamos el nombre a la imagen generada con el comando `image tag` 
+
 ```
 docker image tag <IMAGE-ID> confidget
 docker image ls
 ```
+
+Ahora que disponemos de una imagen basada en debian que tiene el comando `figlet` instalado la podemos utilizar:
 
 ```
 docker container run configlet figlet hola
@@ -133,8 +144,6 @@ docker image inspect --format "{{ json .RootFS.Layers }}" alpine
 
 docker image inspect --format "{{ json .RootFS.Layers }}" hello:v0.2
 ```
-
-
 
 ---
 
