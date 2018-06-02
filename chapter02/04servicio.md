@@ -24,9 +24,9 @@ y descargará la imagen y nos devolverá el _prompt_, pero ha dejado corriendo e
 Podemos interrogar con docker si el contenedor está corriendo:
 
 ```
-$ docker ps
-CONTAINER ID        IMAGE 
-01a420094251        andygrunwald/simple-webserver:latest 
+$ docker container ls
+CONTAINER ID        IMAGE                           COMMAND             CREATED              STATUS              PORTS                    NAMES
+8d5297a02f2c        andygrunwald/simple-webserver   "app"               About a minute ago   Up About a minute   0.0.0.0:8082->8082/tcp   stupefied_bohr
 ```
 
 ## Utilizar el servicio
@@ -43,8 +43,58 @@ simple webserver v1.0.0
 Como al contenedor lo creamos sin nombre, nos referimos a él por el _Container ID_ y lo apagamos con:
 
 ```
-$ docker stop 01a420094251
+$ docker container stop 01a420094251
+$ docker container ls
+CONTAINER ID        IMAGE               COMMAND
+$
 ```
+
+## Encender el contenedor
+
+```
+$ docker container start 01a420094251
+```
+
+## Acceder a un contenedor en ejecución
+
+Es posible acceder a un contenedor, para modificar contenido, revisar logs, verificar distintas configuraciones, obteniendo shell:
+
+```
+docker container exec -it eager_hopper sh
+```
+
+donde:
+
+- `-i` entrará en modo interactivo
+- `-t` asignara una consola `tty` al proceso ejecutado (sh)
+
+## Ejercicios
+
+### 1.
+
+Borrar todos los container apagados utilizando los comandos:
+
+```
+docker container ps -a
+docker container rm <CONTAINER-ID> 
+```
+
+### 2.
+
+Volver a ejecutar el container (_Ejecución_)como se muestra a principio esta sección verificando que esté activo y tratar de borrarlo con los comandos, verificando las diferencias entre ellos:
+
+```
+docker container rm <CONTAINER-ID>
+docker container rm -f <CONTAINER-ID> 
+```
+
+### 3.
+
+Volver a ejecutar el container (_Ejecución_) pero esta vez **sin** el parámetro `-d` dejando el servicio en primer plano.
+
+Desde otra consola hacer conexiones con `curl http://localhost:8082`
+
+Salir con `Ctrl-C` y verificar qué sucede con el contenedor utilizando el comando `docker container ls`
 
 ---
 

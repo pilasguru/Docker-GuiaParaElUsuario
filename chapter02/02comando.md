@@ -3,7 +3,7 @@
 También podemos tomar una imagen cualquiera, aunque tenga una aplicación instalada y ejecutar comandos en ella:
 
 ```
-$ docker run busybox echo 'hola mundo!'
+$ docker container run busybox echo 'hola mundo!'
 ```
 
 La primera vez que lo ejecutamos, descargará la _imagen_ `busybox` e inmediatamente ejecutará el comando `echo 'hola mundo!'` produciendo la salida correspondiente:
@@ -21,7 +21,7 @@ hola mundo!
 A partir de tener la imagen `busybox` local, podemos ejecutar otros comandos con ella:
 
 ```
-$ docker run busybox ps xa
+$ docker container run busybox ps xa
 PID   USER     TIME   COMMAND
     1 root       0:00 ps xa
 ```
@@ -31,7 +31,7 @@ Para saber por qué tenemos un único proceso con `PID 1`, ver [Cómo funciona d
 **Cada vez que ejecutamos una imagen**, queda guardado el contenedor ejecutado, es decir no se borra:
 
 ```
-$ docker container ps -a
+$ docker container ls -a
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS                                                                         NAMES
 d223748120dc        busybox             "echo 'hola mundo!'"     17 seconds ago      Exited (0) 16 seconds ago                                                                                 mystifying_heyrovsky
 4018dd3cdd71        hello-world         "/hello"                 21 minutes ago      Exited (0) 21 minutes ago                                                                                 vigorous_shannon
