@@ -49,15 +49,17 @@ _Give a sysadmin an image and their app will be up-to-date for a day, give a sys
 
 Crear un archivo con el nombre `index.js` con el siguiente contenido:
 
-``` var os = require("os");
+```
+var os = require("os");
 var hostname = os.hostname();
 console.log("Un saludo desde " + hostname);
 ```
 
 Crear un archivo con el nombre `Dockerfile` con el siguiente contenido.
 
-``` FROM alpine
-RUN apk update && apk add nodejs
+```
+FROM alpine
+RUN app update && app add nodejs
 COPY . /app
 WORKDIR /app
 CMD ["node","index.js"]
