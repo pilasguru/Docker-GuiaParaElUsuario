@@ -47,6 +47,15 @@ docker container run configlet figlet hola
 
 _Give a sysadmin an image and their app will be up-to-date for a day, give a sysadmin a Dockerfile and their app will always be up-to-date_ 
 
+`Dockerfile` es un archivo de comandos que permite crear una imagen de un contenedor a través de Docker Engine que entiende los siguientes comandos:
+
+- **FROM** siempre es el primer comando e indica la imagen en la cual se basará la nueva imagen que se creará.
+- **RUN** Es un comando que se ejecutará al crear la nueva imagen. Docker ejecutará los comandos RUN en una nueva capa de la imagen, lo que permite hacer roll-back fácilmente.
+- **COPY** pondrá archivos locales dentro de la imagen. 
+- **CMD** indica los comandos que se ejecutarán cuando se corra la imagen (`docker run`).
+- **EXPOSE** indica los puertos que el contenedor usará. Permite al usuario obtenerlos con el comando `docker container inspect <container-id>`
+- **ENTRYPOINT** es el comando que se ejecutará, sin importar lo que el usuario especifique en runtime.
+
 Crear un archivo con el nombre `index.js` con el siguiente contenido:
 
 ```
@@ -119,6 +128,16 @@ hello                           v0.1                14ddb4369169        About a 
 
 ```
 docker container run hello:v0.1
+```
+
+### .dockerignore
+
+Si en el rail donde se construye la imagen se coloca un archivo `.dockerignore` se puede listar directorios o archivos que no se deben incluir en la imagen generada:
+
+```
+/modules
+/modules/
+/modules/*
 ```
 
 ## Capas de las imágenes
