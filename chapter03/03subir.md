@@ -25,7 +25,6 @@ cd7100a72410: Preparing
 latest: digest: sha256:8c03bb07a531c53ad7d0f6e7041b64d81f99c6e493cb39abba56d956b40eacbc size: 528
 ```
 
-**NOTA:** Las imágenes una vez subidas a Docker Hub no pueden ser borradas (al menos en la funcionalidad disponible en la época de escribir este manual).
 
 ---
 

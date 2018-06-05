@@ -68,7 +68,7 @@ Crear un archivo con el nombre `Dockerfile` con el siguiente contenido.
 
 ```
 FROM alpine
-RUN app update && app add nodejs
+RUN apk update && apk adk nodejs
 COPY . /app
 WORKDIR /app
 CMD ["node","index.js"]
