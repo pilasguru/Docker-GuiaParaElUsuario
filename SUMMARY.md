@@ -19,13 +19,20 @@
 * [Imágenes docker](chapter03/README.md)
 * [Gestión de imágenes](chapter03/01imagenes.md)
 * [Crear imágenes propias](chapter03/02crear.md)
-* [Subir (compartir) imágenes propias](chapter03/03subir.md)
+* [Crear a partir de un contenedor](chapter03/03crear-contenedor.md)
+* [Crear usando Dockerfile](chapter03/04crear-dockerfile.md)
+* [Capas de las imágenes](chapter03/05capas.md)
+* [Subir (compartir) imágenes propias](chapter03/06subir.md)
 
 ### Capítulo IV
 
 * [Volúmenes docker](chapter04/README.md)
 * [Bind mount](chapter04/01bind.md)
 * [Volume](chapter04/02volume.md)
+
+### Capítulo V
+
+* [Redes docker](chapter05/README.md)
 
 
 ---
