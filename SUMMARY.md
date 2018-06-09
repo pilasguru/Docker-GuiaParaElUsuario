@@ -38,6 +38,11 @@
 * [Contenedores detrás de bridges](chapter05/03redbridge.md)
 * [Contenedores juntos](chapter05/04redjuntos.md)
 
+### Capítulo VI
+
+* [Múltiple contenedores](chapter06/README.md)
+* [docker-compose](chapter06/02docker-compose.md)
+
 ---
 
 * [Licencia](LICENSE.md)
