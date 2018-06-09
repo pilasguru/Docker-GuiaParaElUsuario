@@ -2,10 +2,10 @@
 
 Los contenedores suponen aislación, por lo que para vincularlos tenemos cuatro tipos de opciones o formas de vinculación.
 
-1. [Contenedores cerrados](chapter05/01redcerrado.md) (_none_)
-2. [Contenedores abiertos](chapter05/02redabierto.md) (_host_)
-3. [Contenedores detrás de bridges](chapter05/03redbridge.md) (_bridge_)
-4. [Contenedores juntos](chapter05/04redjuntos.md) (_container_)
+1. [Contenedores cerrados](01redcerrado.md) (_none_)
+2. [Contenedores abiertos](02redabierto.md) (_host_)
+3. [Contenedores detrás de bridges](03redbridge.md) (_bridge_)
+4. [Contenedores juntos](04redjuntos.md) (_container_)
 
 Docker ofrece un sistema muy flexible de red, que permite crear nuestra propia configuración, para atender necesidades específicas.
 
